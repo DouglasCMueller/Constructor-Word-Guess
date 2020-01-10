@@ -1,9 +1,9 @@
-function Letter(letter){
-    this.letter = letter;
-    this.guessedCorrectly = false;
+function Letter(char){
+    this.char = char;
+    this.letterGuessedCorrectly = false;
 
 this.showLetter = function(){
-    if(this.guessedCorrectly){
+    if(this.letterGuessedCorrectly){
 return this.letter + " ";
     }
     else{
@@ -13,12 +13,14 @@ return this.letter + " ";
 
 this.checkGuess = function(guess){
     if (guess === this.letter){
-        this.guessedCorrectly = True;
+        this.letterGuessedCorrectly = True;
 
     }
 };
 
 };
+
+
 module.exports = Letter;
 
 
