@@ -1,3 +1,9 @@
+
+var inquirer = require('inquirer');
+var clc = require("cli-color");
+
+
+
 function Letter(char){
     this.char = char;
     this.letterGuessedCorrectly = false;
@@ -20,6 +26,24 @@ this.checkGuess = function(guess){
 
 };
 
+function playGame() {
+    inquirer.prompt([{
+      type: "input",
+      name: "userLetterGuess",
+      message: "Guess a letter"
+  
+    }])
+  
+      .then(answers => {
+          var userLetterGuessUsed = answers.userLetterGuess;
+        console.log(userLetterGuessUsed);
+  
+  
+  
+  
+    });
+  };
+    playGame();
 
 module.exports = Letter;
 
