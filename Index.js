@@ -38,14 +38,13 @@ function startGame(){
   
   var word = new Word(randomWord);
 
-
+console.log(word)
   console.log(clc.blue("Welcome to the Sport Guess Game!\n"));
   console.log(clc.red("Here is the first sport name to guess:\n"));
-console.log(word);
+
+
 }
 
-
-inquirer.prompt
 
 
 

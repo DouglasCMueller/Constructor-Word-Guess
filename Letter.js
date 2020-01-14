@@ -6,7 +6,7 @@ letter = "o"
 var Letter = function(letter){
     this.letter = letter;
     this.letterGuessedCorrectly = false;
-
+console.log(letter)
 this.showLetter = function(){
     if(this.letterGuessedCorrectly){
 return this.letter + " ";
@@ -27,6 +27,6 @@ this.checkGuess = function(guess){
 
   
 
-module.exports = Letter;
+// module.exports = Letter;
 
 
