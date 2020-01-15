@@ -1,31 +1,21 @@
+console.log("test")
 
-var character = "o";
-var guess = "o"
-letter = "o"
-
-var Letter = function(letter){
-    this.letter = letter;
+char = "o"
+var Letter = function(char){
+    this.char = letter;
     this.letterGuessedCorrectly = false;
-console.log(letter)
-this.showLetter = function(){
-    if(this.letterGuessedCorrectly){
-return this.letter + " ";
-    }
-    else{
-        return "_ ";
-    };
-};
-
-this.checkGuess = function(guess){
-    if (guess === this.letter){
-        this.letterGuessedCorrectly = True;
-
-    }
-};
-
-};
-
-  
+    var character = new Letter(char);
+consol.log(character)
+// function showLetter(letter){
+//     if(this.letterGuessedCorrectly){
+// console.log(this.letter + " ");
+//     }
+//     else{
+//         consol.log("_ ");
+        
+//     };
+// };
+}
 
 // module.exports = Letter;
 
